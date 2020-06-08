@@ -4,45 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" href="img/favicon.png">
     <title>Página Inicial</title>
 </head>
 <body>
     <div class="header">
         <div class="container">
-          <a href="index.html"><img src="img/logo_transparent.png" alt="" style="width: 110px; margin-top: 2px;" ></a>  
 
-            <button class="btn_header efeito_btn">Login</button>
-            <button class="btn_header efeito_btn" id="btn_cadastrar_header" >Cadastrar-se</button>
+            <div class="sidebar" id="mySidebar">
+                <a class="closebtn" onclick="closeNav()">x</a>
+                <a href="">Inscreva-se</a>
+                <a href="">Já é tem uma conta? Entre</a>
+                <a href="">Entre em contato</a>
+                <a href="">Sobre</a>
+            </div>
+            
+
+            <div class="busca">
+                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            
 
             <div class="nav">
                 <ul>
                     <li><a class="atual" href="index.html">HOME</a></li>
-                    <li><a href="">TRAP</a></li>
-                    <li><a href="">BASKETBALL</a></li>
                     <li><a href="">SNEAKERS</a></li>
-                    <li><a href="">FASHION</a></li>
+                    <li><a href="">NIKE</a></li>
+                    <li><a href="">ADIDAS</a></li>
+                    <li><a href="">JORDAN</a></li>
+                    <li><a href="">YEEZY</a></li>
                 </ul>
             </div>
+
+            <div class="redes_sociais">
+                <ul>
+                    <a class="openbtn"><i onclick="openNav()" class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </ul>
+               
+            </div>
+            
+
+        </div>
+    </div>
+   
+    <div class="showcase_logo">
+        <div class="container">
+            <img src="img/linkedin_profile_image.png"  alt="">
         </div>
     </div>
 
 
     <div class="showcase">
         <div class="container">
+            <div class="esquerda"></div>
+              
 
-                <img src="img/albuns_home.png" alt="" style="width: 350px;">
-            
-            
-            
-                <h1>Mundo do Trap</h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur rem deserunt et expedita obcaecati praesentium corrupti. Doloribus, quae laudantium nam culpa vel possimus maiores omnis repellendus obcaecati, reiciendis eligendi.
-                Eum eos quae mollitia voluptatum distinctio. Iusto beatae quod non expedita incidunt, consequatur excepturi eos id vel quia dolore, quas alias unde? Officiis eligendi veniam consequatur dolore rem. Facilis, libero.
-                Corporis nobis, molestiae accusantium omnis molestias ullam cumque voluptatem iste iusto pariatur, harum impedit rem ad labore a nesciunt! Voluptas temporibus corrupti eaque tempore dolore, nemo nostrum in maiores consequatur.</p>
-            
-           
-        </div>
+            <div class="direita"></div>
     </div>
 
 
@@ -50,3 +71,12 @@
 
 </body>
 </html>
+<script>
+    function closeNav(){
+    document.getElementById("mySidebar").style.width = "0";
+}
+
+    function openNav(){
+        document.getElementById("mySidebar").style.width = "250px"
+    }
+</script>

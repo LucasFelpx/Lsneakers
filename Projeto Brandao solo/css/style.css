@@ -1,108 +1,140 @@
 body{
-    width: 0;
     margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ececda;
 }
 
 .container{
     width: 100%;
-    margin: 0 0;
+    height: 50px;
     /* height: 100%; */
     padding-right: 0px;
-
 }
 
 .header{
     width: 100%;
-    height: 70px;
-    background-color: #fccf4d;
-    border-top: #2db6a3 5px solid;
+    height: 50px;
+    background-color: #ff304f;
     position: fixed;
 }
 
 .header .container{
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 /* NAVEGAÇÃO DO HEADER */
 
 .nav ul li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 50px;
     font-size: 16px;
 }
 
 .nav a{
     text-decoration: none;
-    color: #232323;
+    color: white;
 }
 
 .nav ul {
-    margin: 13px auto;
+    margin-right: 250px;
     padding: 22px;
 }
 
 .nav{
-    margin-top: 0px;
+    margin-top: -5px;
     float: right;
-    margin-right: 100px;
+    margin-right: 65px;
 }
 
 .nav ul :hover{
-    color: #219486;
+    color: #0e2f56;
 }
 
 .header .nav a.atual{ /*ITEM DE MENU SELECIONADO*/
-    color:#219486 ;
+    color:#0e2f56 ;
     font-weight: bold;
 }
 
+.redes_sociais{
+    width: 300px;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+    margin-left: -30px;
+}
 
-/* BOTÕES DE CADASTRAR E LOGIN HEADER */
+.redes_sociais ul a{
+    margin-left: 20px;
+}
 
-.btn_header{
-    margin-top: 10px;
-    background-color: #2db6a3;
+.redes_sociais i{
+    color: white;
+}
+
+.busca{
+    width: 100px;
+    height: 20px;
     float: right;
-    border: none;
-    width: 7%;
-    height: 70px;
-    font-size: 18px ;
+    margin-top: 35px;
+    margin-right: -40px;
 }
 
-#btn_cadastrar_header{
-    background-color: #219486;
-    width: 10%;
-    font-weight: bold;
+.busca i{
+    color: white;
 }
 
-
-.efeito_btn{
+/* SIDEBAR */
+.openbtn{
+    font-size: 30px;
     cursor: pointer;
-    transition: all 400ms ease;
+    color: white;
+    margin-right: 50px;
 }
 
-
-
-
-
-
-/* PRIMEIRA TELA DO INDEX */
-
-.showcase{
-    width: 100%;
-    height: 630px;
-    text-align: center;
-    color: black;
-    padding-top: 100px;
+.sidebar{
+    height: 100%;
+    width: 0px;
+    background-color:white ;
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.showcase .container {
-    width: 100%;
-    height: 630px;
-}
-
-.showcase p{
+.sidebar a{
+    padding: 5px;
+    text-decoration: none;
     font-size: 25px;
-    text-align: center;
+    color: black;
+    display: block;
+}
+
+.sidebar .closebtn{
+    font-size: 37px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.div_open{
+    width: 50px;
+}
+
+
+/* Logo */
+.showcase_logo{
+    width: 100%;
+    height: 300px;
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+
+.showcase_logo .container{
+    width: 100%;
+    height: 300px;
+}
+
+.showcase_logo .container img{
+    width: 250px;
+    margin-left: 550px;
 }
 
