@@ -141,10 +141,14 @@ body{
 
 
 /* Banner Slide */
+.showcase{
+    width: 100%;
+    height: 500px;
+}
+/* Banner Esquerda */
 .showcase .container{
     max-width: 1080px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 .showcase .container img{
@@ -217,6 +221,95 @@ body{
 }
 
 .showcase .container .div_texto2 #btn_leia_mais:hover{
+    background-color: #ff304f;
+    border: #ff304f;
+    color: white;
+}
+
+
+
+
+
+/* Banner Direita */
+.showcase_direita .container{
+    max-width: 1080px;
+    margin: 0 auto; 
+}
+
+.showcase_direita .container img{
+    max-width: 100%;
+    float: right;
+}
+
+.showcase_direita .container .quadrado_borda{
+    width: 400px;
+    height: 400px;
+    border: #0e2f56 solid 4px;
+    float: right;
+}
+
+ .showcase_direita .container .div_imagem{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/blazer_mid_77.jpg);
+    margin-top: -40px;
+    margin-right: -370px;
+    float: right;
+} 
+
+.showcase_direita .container .div_texto1{
+    width: 430px;
+    height: 140px;
+    background-color: white;
+    float: left;
+    margin-top: -410px;
+    margin-left: 190px;
+    text-align: right;
+    padding: 16px 32px 24px;
+}
+
+.showcase_direita .container .div_texto1 a{
+    color: #565d6a;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#a_news{
+    font-size: 14px;
+    text-decoration: underline #0e2f56 ;
+}
+
+.showcase_direita .container .div_texto2{
+    width: 430px;
+    max-height: 180px;
+    background-color: white;
+    float: left;
+    margin-top: -190px;
+    margin-left: 80px;
+    padding: 20px 40px 32px;
+}
+
+.showcase_direita .container .div_texto2 span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #565d6a;
+    float: right;
+}
+
+.showcase_direita .container .div_texto2 #btn_leia_mais{
+    margin-top: 25px;
+    background-color: white;
+    border: #0e2f56 solid 2px;
+    width: 120px;
+    height: 35px;
+    font-weight: bold;
+    color: #565d6a;
+    transition: all 800ms ease;
+    cursor: pointer;
+}
+
+.showcase_direita .container .div_texto2 #btn_leia_mais:hover{
     background-color: #ff304f;
     border: #ff304f;
     color: white;
