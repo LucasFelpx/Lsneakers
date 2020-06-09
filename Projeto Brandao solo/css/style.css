@@ -143,7 +143,7 @@ body{
 /* Banner Slide */
 .showcase{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 /* Banner Esquerda */
 .showcase .container{
@@ -195,7 +195,7 @@ body{
 
 .showcase .container .div_texto2{
     width: 430px;
-    height: 160px;
+    max-height: 240px;
     background-color: white;
     float: right;
     margin-top: -140px;
@@ -231,6 +231,10 @@ body{
 
 
 /* Banner Direita */
+.showcase_direita{
+    width: 100%;
+    height: 600px; 
+}
 .showcase_direita .container{
     max-width: 1080px;
     margin: 0 auto; 
@@ -283,12 +287,13 @@ body{
 
 .showcase_direita .container .div_texto2{
     width: 430px;
-    max-height: 180px;
+    max-height: 220px;
     background-color: white;
     float: left;
     margin-top: -190px;
     margin-left: 80px;
     padding: 20px 40px 32px;
+    text-align: right;
 }
 
 .showcase_direita .container .div_texto2 span{
@@ -313,4 +318,73 @@ body{
     background-color: #ff304f;
     border: #ff304f;
     color: white;
+}
+
+
+
+/* Terceira noticia home */
+.showcase .container .div_imagem_3{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/ASHURST_SPZL.jpg);
+    margin-top: -450px;
+    margin-left: 40px;
+}
+
+/* Quarta noticia home */
+.showcase_direita .container .div_imagem_4{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/TRAINING_76_SPZL.jpg);
+    margin-top: -40px;
+    margin-right: -370px;
+    float: right;
+}
+
+/* Quinta noticia home */
+.showcase .container .div_imagem_5{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/sunk_low_ben&jerry.jpg);
+    margin-top: -450px;
+    margin-left: 40px;
+}
+
+/* Sexta noticia home */
+.showcase_direita .container .div_imagem_6{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/jordan_5_se.jpg);
+    margin-top: -40px;
+    margin-right: -370px;
+    float: right;
+}
+
+/* Setima noticia home */
+.showcase .container .div_imagem_7{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/yeezy_boost_350_v2_frozen.jpg);
+    margin-top: -450px;
+    margin-left: 40px;
+}
+
+
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 50px;
+}
+
+.footer .container{
+    width: 100%;
+    height: 30px;
+    background-color: #ff304f;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 12px;
+
 }
