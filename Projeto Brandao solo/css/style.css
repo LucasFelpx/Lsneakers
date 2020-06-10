@@ -17,6 +17,7 @@ body{
     height: 50px;
     background-color: #ff304f;
     position: fixed;
+
 }
 
 .header .container{
@@ -119,13 +120,92 @@ body{
     width: 50px;
 }
 
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal div{
+    text-align: center;
+    width: 450px;
+    height: 500px;
+    position: relative;
+    margin: 3% auto;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 1%;
+}
+
+.modal form{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.modal form label{
+    display: block;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.modal span{
+    color: rgb(133, 133, 133);
+}
+
+.modal .input-padrao{
+    display: block;
+    height: 28px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgb(207, 207, 207) 1px solid;
+}
+
+.fecharModal{
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff304f;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.modal #btn_cadastrar{
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #ff304f;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
 
 /* Logo */
 .showcase_logo{
     width: 100%;
-    height: 400px;
+    height: 320px;
     padding-top: 70px;
-    margin-bottom: 30px;
 }
 
 .showcase_logo .container{
@@ -141,11 +221,108 @@ body{
 
 
 /* Banner Slide */
+
+
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  .carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .carousel .imagem {
+    width: 100%;
+    height: 430px;
+    background-image: url(../img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .carousel .imagem_banner_2{
+      background-image: url(../img/banner2.jpg);
+  }
+
+  .carousel .imagem_banner_3{
+      background-image: url(../img/banner3.jpg);
+  }
+  
+  .carousel .carousel-item .arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50% /
+      20px no-repeat;
+  }
+  .carousel .carousel-item .arrow.arrow-prev {
+    left: 0;
+  }
+  .carousel .carousel-item .arrow.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .carousel .carousel-item.light {
+    color: white;
+  }
+  .carousel .carousel-item.light .arrow {
+    background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50% /
+      20px no-repeat;
+  }
+  .carousel [id^="target-item"] {
+    display: none;
+  }
+  .carousel .item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+  .carousel *:target ~ .item-1 {
+    opacity: 0;
+  }
+  .carousel #target-item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+  .carousel #target-item-2:target ~ .item-2,
+  .carousel #target-item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .showcase{
     width: 100%;
     height: 600px;
 }
-/* Banner Esquerda */
+
 .showcase .container{
     max-width: 1080px;
     margin: 0 auto; 

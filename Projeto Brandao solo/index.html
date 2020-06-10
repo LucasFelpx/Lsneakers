@@ -14,7 +14,7 @@
 
             <div class="sidebar" id="mySidebar">
                 <a class="closebtn" onclick="closeNav()">x</a>
-                <a href="">Inscreva-se</a>
+                <a href="#abrirModalCadastro">Inscreva-se</a>
                 <a href="">Já é tem uma conta? Entre</a>
                 <a href="">Entre em contato</a>
                 <a href="">Sobre</a>
@@ -46,16 +46,78 @@
                 </ul>
                
             </div>
-            
-
         </div>
     </div>
+
+
+    <!-- Modal para login e cadastrar -->
+
+    <div id="abrirModalCadastro" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fecharModal">x</a>
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <form submit="">
+               
+                <input type="text" id="nomecompleto" placeholder="Nome Completo" class="input-padrao"> <br>
+
+                <input type="email" id="email" placeholder="Email" class="input-padrao"><br>
+
+                <input type="password" id="senha" placeholder="Senha" class="input-padrao"><br>
+
+                <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br>
+
+                <button id="btn_cadastrar">Junte-se a nós</button>
+            </form>
+        </div>
+       
+    
+    </div>
+
+
+
+
+
    
     <div class="showcase_logo">
         <div class="container">
             <a href="index.html"><img src="img/linkedin_profile_image.png"  alt=""></a>
         </div>
     </div>
+
+
+
+    <div class="carousel">
+        <span id="target-item-1"></span>
+        <span id="target-item-2"></span>
+        <span id="target-item-3"></span>
+    
+        <div class="carousel-item item-1">
+            <div class="imagem"></div>
+            <a class="arrow arrow-prev" href="#target-item-3"></a>
+            <a class="arrow arrow-next" href="#target-item-2"></a>
+          </div>
+    
+          <div class="carousel-item item-2">
+            <div class="imagem imagem_banner_2"></div>
+            <a class="arrow arrow-prev" href="#target-item-1"></a>
+            <a class="arrow arrow-next" href="#target-item-3"></a>
+          </div>
+    
+          <div class="carousel-item item-3">
+            <div class="imagem imagem_banner_3"></div>
+            <a class="arrow arrow-prev" href="#target-item-2"></a>
+            <a class="arrow arrow-next" href="#target-item-1"></a>
+          </div>
+        </div>
+
+
+
+
+
+
+
 
 
     <div class="showcase">
@@ -208,13 +270,33 @@
 </body>
 </html>
 <script>
+  setInterval(() => {
+    if (
+      window.location.hash === "#target-item-1" ||
+      window.location.hash === "#target-item-3"
+    ) {
+      window.location.hash = "#target-item-1";
+    }
+    setTimeout(() => {
+      if (window.location.hash === "#target-item-1") {
+        window.location.hash = "#target-item-2";
+      }
+      setTimeout(() => {
+        if (window.location.hash === "#target-item-2") {
+          window.location.hash = "#target-item-3";
+        }
+      }, 1500);
+    }, 1000);
+  }, 4000);
+
+
+
     function closeNav(){
-    document.getElementById("mySidebar").style.width = "0";
-}
+        document.getElementById("mySidebar").style.width = "0";
+    }
 
     function openNav(){
         document.getElementById("mySidebar").style.width = "250px"
     }
-
 
 </script>
