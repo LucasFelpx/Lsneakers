@@ -86,31 +86,10 @@
         </div>
     </div>
 
+    <div class="div_banner" >
+        <img id="banner_imagem" src="img/banner1.jpg" alt="">
+    </div>
 
-
-    <div class="carousel">
-        <span id="target-item-1"></span>
-        <span id="target-item-2"></span>
-        <span id="target-item-3"></span>
-    
-        <div class="carousel-item item-1">
-            <div class="imagem"></div>
-            <a class="arrow arrow-prev" href="#target-item-3"></a>
-            <a class="arrow arrow-next" href="#target-item-2"></a>
-          </div>
-    
-          <div class="carousel-item item-2">
-            <div class="imagem imagem_banner_2"></div>
-            <a class="arrow arrow-prev" href="#target-item-1"></a>
-            <a class="arrow arrow-next" href="#target-item-3"></a>
-          </div>
-    
-          <div class="carousel-item item-3">
-            <div class="imagem imagem_banner_3"></div>
-            <a class="arrow arrow-prev" href="#target-item-2"></a>
-            <a class="arrow arrow-next" href="#target-item-1"></a>
-          </div>
-        </div>
 
 
 
@@ -261,6 +240,11 @@
 
 
 
+
+
+
+
+
     <div class="footer">
         <div class="container">
             <span>COPYRIGHT 2020 LSNEAKERS</span>
@@ -270,25 +254,21 @@
 </body>
 </html>
 <script>
-  setInterval(() => {
-    if (
-      window.location.hash === "#target-item-1" ||
-      window.location.hash === "#target-item-3"
-    ) {
-      window.location.hash = "#target-item-1";
-    }
-    setTimeout(() => {
-      if (window.location.hash === "#target-item-1") {
-        window.location.hash = "#target-item-2";
-      }
-      setTimeout(() => {
-        if (window.location.hash === "#target-item-2") {
-          window.location.hash = "#target-item-3";
+  let contador = 0
+        window.setInterval('banner_next()', 4000);
+        function banner_next(){
+            contador++;
+            if(contador == 1){
+                banner_imagem.src = "img/banner1.jpg";
+            } 
+            else if(contador == 2){
+                banner_imagem.src = "img/banner2.jpg";
+            }
+            else if(contador == 3){
+                banner_imagem.src = "img/banner3.jpg";
+                contador = 0;
+            }
         }
-      }, 1500);
-    }, 1000);
-  }, 4000);
-
 
 
     function closeNav(){
