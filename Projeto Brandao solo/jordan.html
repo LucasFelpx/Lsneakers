@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" href="img/favicon.png">
+    <script src="app/functions.js"></script>
     <title>Jordan</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 
             <div class="sidebar" id="mySidebar">
                 <a class="closebtn" onclick="closeNav()">x</a>
-                <a href="">Inscreva-se</a>
+                <a href="#abrirModalCadastro">Inscreva-se</a>
                 <a href="">Já é tem uma conta? Entre</a>
                 <a href="">Entre em contato</a>
                 <a href="">Sobre</a>
@@ -50,5 +51,31 @@
 
         </div>
     </div>
+
+
+     <!-- Modal para login e cadastrar -->
+
+     <div id="abrirModalCadastro" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fecharModal">x</a>
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <form submit="">
+               
+                <input type="text" id="nomecompleto" placeholder="Nome Completo" class="input-padrao"> <br>
+
+                <input type="email" id="email" placeholder="Email" class="input-padrao"><br>
+
+                <input type="password" id="senha" placeholder="Senha" class="input-padrao"><br>
+
+                <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br>
+
+                <button id="btn_cadastrar">Junte-se a nós</button>
+            </form>
+        </div>
+    </div>
+
+
 </body>
 </html>
