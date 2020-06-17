@@ -16,7 +16,7 @@
             <div class="sidebar" id="mySidebar">
                 <a class="closebtn" onclick="closeNav()">x</a>
                 <a href="#abrirModalCadastro">Inscreva-se</a>
-                <a href="">Já é tem uma conta? Entre</a>
+                <a href="#abrirModalLogin">Já é tem uma conta? Entre</a>
                 <a href="">Entre em contato</a>
                 <a href="">Sobre</a>
             </div>
@@ -69,7 +69,27 @@
 
                 <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br>
 
-                <button id="btn_cadastrar">Junte-se a nós</button>
+                <button class="btn_modal" id="btn_login">Junte-se a nós</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Modal para login -->
+
+    <div id="abrirModalLogin" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fecharModal">x</a>
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <form submit="">
+
+                <input type="email" id="email" placeholder="Email" class="input-padrao"><br>
+
+                <input type="password" id="senha" placeholder="Senha" class="input-padrao"><br>
+
+                <button class="btn_modal" id="btn_login">Entrar</button>
             </form>
         </div>
     </div>
@@ -112,7 +132,7 @@
                 <span>Antes de consolidar seu status como ícone do streetstyle e skate, o Dunk começou sua jornada nas quadras das faculdade.
                      O design causou grandes burburinho em 1985, quando estreou em um pack com as cores dos programas universitários. 
                      Agora, algumas dessas preciosas cores OG estão de volta para comemorar o 35º aniversário do modelo.</span>
-                <button id="btn_leia_mais">LEIA MAIS</button>
+                <button id="btn_leia_mais" class="efeito_btn">LEIA MAIS</button>
             </div>
         </div>
     </div>
@@ -269,12 +289,5 @@
         }
 
 
-    function closeNav(){
-        document.getElementById("mySidebar").style.width = "0";
-    }
-
-    function openNav(){
-        document.getElementById("mySidebar").style.width = "250px"
-    }
 
 </script>

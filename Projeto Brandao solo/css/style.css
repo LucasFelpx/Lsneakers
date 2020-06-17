@@ -94,7 +94,7 @@ body{
 }
 
 .sidebar{
-    height: 100%;
+    height: 10000px;
     width: 0px;
     background-color:white ;
     position: fixed;
@@ -191,7 +191,7 @@ body{
     color: #8d0000;
 }
 
-.modal #btn_cadastrar{
+.modal .btn_modal{
     width: 300px;
     height: 30px;
     border-radius: 3px;
@@ -315,6 +315,7 @@ body{
     transition: all 800ms ease;
     cursor: pointer;
 }
+
 
 .showcase .container .div_texto2 #btn_leia_mais:hover{
     background-color: #ff304f;
@@ -464,6 +465,112 @@ body{
     margin-top: -450px;
     margin-left: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PÁGINA NIKE */
+
+.showcase_nike {
+    width: 100%;
+    height: 500px;
+}
+
+.showcase_nike .container{
+    padding-top: 180px;
+    width: 100%;
+    height: 320px;
+    background-image: url(../img/90.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showcase_nike .container .conteudo{
+    text-align: center;
+    width: 30%;
+    margin-left: 0px;
+}
+
+.showcase_nike .container .conteudo h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.showcase_nike .container img{
+    width: 200px;
+    float: right;
+    margin-top: 100px;
+}
+
+.showcase_nike .container .conteudo #ir_site_nike{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    border-right: 1px solid black;
+    transition: linear 0.5s;
+}
+
+.showcase_nike .container .conteudo #ir_site_nike:hover{
+    background-color: #ff304f;
+    border: #ff304f;
+    color: white;
+}
+
+
+/* SHOWCASE VIDEO PAGINA NIKE */
+.showcase_nike_video{
+    width: 100%;
+    height: 380px;
+    background-color: #ff304f;
+    text-align: center;
+}
+
+
+.showcase_nike_video .container{
+    background-color: #23232350;
+    color: #232323;
+    width: 100%;
+    height: 350px;
+    padding-top: 30px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#btn_play{
+    color: black;
+    font-size: 100px;
+}
+
+#btn_play:hover{
+    color: #232323;
+}
+
+.modal_video div{
+    width: 1080px;
+    height: 420px;
+}
+
+
+/* SHOWCASE TN's NIKE */
+
+
+
+
+
+
 
 
 
