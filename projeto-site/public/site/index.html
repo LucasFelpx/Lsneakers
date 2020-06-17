@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script src="app/functions.js"></script>
+    <script src="../funcoes.js"></script>
+    <title>Página Inicial</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+            <div class="sidebar" id="mySidebar">
+                <a class="closebtn" onclick="closeNav()">x</a>
+                <a href="#abrirModalCadastro">Inscreva-se</a>
+                <a href="#abrirModalLogin">Já é tem uma conta? Entre</a>
+                <a href="">Entre em contato</a>
+                <a href="">Sobre</a>
+            </div>
+            
+
+            <div class="busca">
+                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            
+
+            <div class="nav">
+                <ul>
+                    <li><a class="atual" href="index.html">HOME</a></li>
+                    <li><a href="sneakers.html">SNEAKERS</a></li>
+                    <li><a href="nike.html">NIKE</a></li>
+                    <li><a href="adidas.html">ADIDAS</a></li>
+                    <li><a href="jordan.html">JORDAN</a></li>
+                    <li><a href="yeezy.html">YEEZY</a></li>
+                </ul>
+            </div>
+
+            <div class="redes_sociais">
+                <ul>
+                    <a class="openbtn"><i onclick="openNav()" class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal para login e cadastrar -->
+
+    <div id="abrirModalCadastro" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fecharModal">x</a>
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <form submit="">
+               
+                <input type="text" id="nomecompleto" placeholder="Nome Completo" class="input-padrao"> <br>
+
+                <input type="email" id="email" placeholder="Email" class="input-padrao"><br>
+
+                <input type="password" id="senha" placeholder="Senha" class="input-padrao"><br>
+
+                <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br>
+
+                <button class="btn_modal" id="btn_login">Junte-se a nós</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Modal para login -->
+
+    <div id="abrirModalLogin" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fecharModal">x</a>
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <form id="form_login" method="post" onsubmit="return entrar()">
+
+                <input type="email" name="login" id="email" placeholder="Email" class="input-padrao"><br>
+
+                <input type="password" name="senha" id="senha" placeholder="Senha" class="input-padrao"><br>
+
+                <button class="btn_modal" id="btn_entrar">Entrar</button>
+
+            </form>
+        </div>
+        
+    </div>
+
+
+
+
+<!-- Logo da home -->
+   
+    <div class="showcase_logo">
+        <div class="container">
+            <a href="index.html"><img src="img/linkedin_profile_image.png"  alt=""></a>
+        </div>
+    </div>
+
+
+    <!-- Imagens trocando -->
+    <div class="div_banner" >
+        <img id="banner_imagem" src="img/banner1.jpg" alt="">
+    </div>
+
+
+
+
+
+
+<!-- Notícias -->
+
+    <div class="showcase">
+        <div class="container">
+           <a href=""><div class="quadrado_borda"></div></a>
+           <a href=""><div class="div_imagem"></div></a>
+
+            <div class="div_texto1">
+                <a href="">LANÇAMENTO NIKE JORDAN 1 LOW GYM RED DA SOLD OUT</a> <br> <br> <br> <br> 
+                <a href="" id="a_news">NEWS</a>
+            </div>
+
+            <div class="div_texto2">
+                <span>Antes de consolidar seu status como ícone do streetstyle e skate, o Dunk começou sua jornada nas quadras das faculdade.
+                     O design causou grandes burburinho em 1985, quando estreou em um pack com as cores dos programas universitários. 
+                     Agora, algumas dessas preciosas cores OG estão de volta para comemorar o 35º aniversário do modelo.</span>
+                <button id="btn_leia_mais" class="efeito_btn">LEIA MAIS</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="showcase_direita">
+        <div class="container">
+            <a href=""><div class="quadrado_borda"></div></a>
+            <a href=""><div class="div_imagem"></div></a>
+ 
+             <div class="div_texto1">
+                 <a href="">LANÇADO DIA 12/06 BLAZER MID 11 WHITE/BLACK FEMININO</a> <br> <br> <br> <br> 
+                 <a href="" id="a_news">NEWS</a>
+             </div>
+ 
+             <div class="div_texto2">
+                 <span>Depois de fazer sucesso como o primeiro tênis de basquete da Nike, o Blazer transformou-se de pioneiro das quadras em um dos principais pilares do streetwear.
+                      Esta versão em particular traz a silhueta de volta às suas raízes com características OG e material premium. 
+                      O cabedal branco de couro contrasta com detalhes pretos no Swoosh e no calcanhar.</span>
+                 <button id="btn_leia_mais">LEIA MAIS</button>
+             </div>
+        </div>
+    </div>
+
+
+
+    <div class="showcase">
+        <div class="container">
+           <a href=""><div class="quadrado_borda"></div></a>
+           <a href=""><div class="div_imagem_3"></div></a>
+
+            <div class="div_texto1">
+                <a href="">UM RARO VINTAGE ADIDAS SPEZIAL RUNNER FAZ UM COMEBACK.</a> <br> <br> <br> <br> 
+                <a href="" id="a_news">NEWS</a>
+            </div>
+
+            <div class="div_texto2">
+                <span>Ponha suas mãos em um clássico. Inspirando-se no fenômeno da música e dança Northern Soul que atingiu a Inglaterra na década de 1970, 
+                    esses sapatos Ashurst SPZL homenageiam a atitude descolada dos movimentos underground.Com base nas séries urbanas da adidas Sidney, elas exibem puro estilo vintage.</span> <br>
+                <button id="btn_leia_mais">LEIA MAIS</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="showcase_direita">
+        <div class="container">
+            <a href=""><div class="quadrado_borda"></div></a>
+            <a href=""><div class="div_imagem_4"></div></a>
+ 
+             <div class="div_texto1">
+                 <a href="">TREINADORES INSPIRADOS EM VINTAGE POR ADIDAS SPEZIAL.</a> <br> <br> <br> <br> 
+                 <a href="" id="a_news">NEWS</a>
+             </div>
+ 
+             <div class="div_texto2">
+                 <span>A alma encontra a rua. Na Inglaterra dos anos 70, uma nova onda de música underground chegou à pista de dança.
+                      Estes sapatos Training 76 SPZL da adidas assumem a atitude sem desculpas do movimento Northern Soul e o misturam com um sapato de treinamento de arquivo.
+                       O resultado é um design elegante e discreto que combina tão bem com o seu guarda-roupa durante a semana quanto com a sua roupa de fim de semana.</span>
+                 <button id="btn_leia_mais">LEIA MAIS</button>
+             </div>
+        </div>
+    </div>
+
+
+    <div class="showcase">
+        <div class="container">
+           <a href=""><div class="quadrado_borda"></div></a>
+           <a href=""><div class="div_imagem_5"></div></a>
+
+            <div class="div_texto1">
+                <a href="">UM DOS TÊNIS MAIS AGUARDADO DE 2020 CHUNKY DUNKY</a> <br> <br> <br> <br> 
+                <a href="" id="a_news">NEWS</a>
+            </div>
+
+            <div class="div_texto2">
+                <span>A Ben & Jerrys faz as coisas do seu próprio jeito desde que serviu sua primeira colher em 1978. A empresa é mundialmente conhecida por produzir sorvetes de alta qualidade -
+                     mas a marca de Vermont sempre se manteve comprometida com seus valores essenciais: fazer o bem e divertir. Em homenagem ao espírito compartilhado entre as marcas, 
+                     a Nike SB produziu uma versão robusta do Dunk Low com tons e texturas que imitam a embalagem do pote de Ben & Jerry.</span> <br>
+                <button id="btn_leia_mais">LEIA MAIS</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="showcase_direita">
+        <div class="container">
+            <a href=""><div class="quadrado_borda"></div></a>
+            <a href=""><div class="div_imagem_6"></div></a>
+ 
+             <div class="div_texto1">
+                 <a href="">COMEMORAÇÃO DOS TRINTA ANOS DE JORDAN 5 SE</a> <br> <br> <br> <br> 
+                 <a href="" id="a_news">NEWS</a>
+             </div>
+ 
+             <div class="div_texto2">
+                 <span>Esta edição especial de verão celebra o 30º aniversário da lendária silhueta AJ5 combinando as três cores OG em uma só colorway: Fire Red, Metallic Silver e Grape Ice. Mas ao invés de tentar competir um contra o outro, 
+                     a parte superior do tênis harmoniza essas cores no design exclusivo do sneaker, como a língua acolchoada e as linhas da entressola.</span>
+                 <button id="btn_leia_mais">LEIA MAIS</button>
+             </div>
+        </div>
+    </div>
+
+
+    <div class="showcase">
+        <div class="container">
+           <a href=""><div class="quadrado_borda"></div></a>
+           <a href=""><div class="div_imagem_7"></div></a>
+
+            <div class="div_texto1">
+                <a href="">YEEZY TÊNIS MAIS VENDIDO DE KANYE WEST</a> <br> <br> <br> <br> 
+                <a href="" id="a_news">NEWS</a>
+            </div>
+
+            <div class="div_texto2">
+                <span>Kanye West é uma máquina de fazer dinheiro quando o assunto é tênis. Sua popularidade, seja pelos seus ótimos discos ou pelo seu posicionamento político e declarações controversas, 
+                    faz com que os produtos desenvolvidos por ele sumam das prateleiras em pouco tempo.</span> <br>
+                <button id="btn_leia_mais">LEIA MAIS</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <span>COPYRIGHT 2020 LSNEAKERS</span>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    
+  let contador = 0
+        window.setInterval('banner_next()', 4000);
+        function banner_next(){
+            contador++;
+            if(contador == 1){
+                banner_imagem.src = "img/banner1.jpg";
+            } 
+            else if(contador == 2){
+                banner_imagem.src = "img/banner2.jpg";
+            }
+            else if(contador == 3){
+                banner_imagem.src = "img/banner3.jpg";
+                contador = 0;
+            }
+        }
+
+
+
+</script>
