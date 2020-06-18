@@ -22,7 +22,7 @@ function entrar() {
                 sessionStorage.login_usuario_meuapp = json.email_usuario;
                 sessionStorage.nome_usuario_meuapp = json.nome_usuario;
                 
-                window.location.href = 'index.html';
+                window.location.href = 'logado.html';
             });
 
         } else {
@@ -45,4 +45,42 @@ function finalizar_aguardar(resposta) {
     img_aguarde.style.display= 'none';
     div_erro.style.display = 'block';
     div_erro.innerHTML = resposta;
+}
+
+
+
+
+
+
+
+
+function cadastrar() {
+    var formulario = new URLSearchParams(new FormData(form_cadastro));
+    fetch("/usuarios/cadastrar", {
+        method: "POST",
+        body: formulario
+    }).then(function (response) {
+        
+        if (response.ok) {
+
+            window.location.href='nike.html';
+
+        } else {
+
+            console.log('Erro de cadastro!');
+            response.text().then(function (resposta) {
+                div_erro.innerHTML = resposta;
+            });
+            finalizarr_aguardar();
+        }
+    });
+
+    return false;
+}
+
+
+function finalizarr_aguardar() {
+    btn_entrar.disabled = false;
+    img_aguarde.style.display='none';
+    div_erro.style.display='block';
 }

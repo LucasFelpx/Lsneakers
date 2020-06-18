@@ -2,10 +2,11 @@ let login_usuario;
 let nome_usuario;
 
 function redirecionar_login() {
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 }
 
 function verificar_autenticacao() {
+    debugger;
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     

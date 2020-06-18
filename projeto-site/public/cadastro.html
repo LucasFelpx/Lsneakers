@@ -21,19 +21,14 @@
         <button id="btn_entrar">Cadastrar</button>
     </form>
     
-    <img src="aguarde2.gif" id="img_aguarde" style="display: none;" width="100px">
-    
-    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
-        Erro no cadastro
-    </div>
-
+   
 </body>
 
 </html>
 <script>
 
     function cadastrar() {
-        aguardar();
+        // aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -57,11 +52,11 @@
         return false;
     }
 
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
-    }
+    // function aguardar() {
+    //     btn_entrar.disabled = true;
+    //     img_aguarde.style.display='block';
+    //     div_erro.style.display='none';
+    // }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
