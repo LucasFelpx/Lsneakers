@@ -100,7 +100,7 @@ body{
     position: fixed;
     overflow: hidden;
     transition: 0.5s;
-    border-right: #ff1c3e 5px solid;
+    border-right: #2261ad 5px solid;
 }
 
 .sidebar a{
@@ -185,17 +185,17 @@ body{
     text-align: center;
     line-height: 30px;
     margin-top: 5px;
-    background: #ff304f;
+    background: #2261ad;
     border-radius: 50%;
     font-size: 16px;
-    color: #8d0000;
+    color: #0e2f56;
 }
 
 .modal .btn_modal{
     width: 300px;
     height: 30px;
     border-radius: 3px;
-    background-color: #ff304f;
+    background-color: #2261ad;
     color: white;
     font-weight: bold;
     border: none;
@@ -319,8 +319,8 @@ body{
 
 
 .showcase .container .div_texto2 #btn_leia_mais:hover{
-    background-color: #ff304f;
-    border: #ff304f;
+    background-color: #2261ad;
+    border: #2261ad;
     color: white;
 }
 
@@ -413,8 +413,8 @@ body{
 }
 
 .showcase_direita .container .div_texto2 #btn_leia_mais:hover{
-    background-color: #ff304f;
-    border: #ff304f;
+    background-color: #2261ad;
+    border: #2261ad;
     color: white;
 }
 
@@ -525,8 +525,8 @@ body{
 }
 
 .showcase_nike .container .conteudo #ir_site_nike:hover{
-    background-color: #ff304f;
-    border: #ff304f;
+    background-color: #2261ad;
+    border: #2261ad;
     color: white;
 }
 
@@ -535,7 +535,7 @@ body{
 .showcase_nike_video{
     width: 100%;
     height: 380px;
-    background-color: #ff304f;
+    background-color: #2261ad;
     text-align: center;
 }
 
@@ -588,7 +588,7 @@ body{
 .footer .container{
     width: 100%;
     height: 30px;
-    background-color: #ff304f;
+    background-color: #232323;
     text-align: center;
     color: white;
     padding-top: 20px;
