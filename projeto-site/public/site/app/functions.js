@@ -22,7 +22,7 @@ function entrar() {
                 sessionStorage.login_usuario_meuapp = json.email_usuario;
                 sessionStorage.nome_usuario_meuapp = json.nome_usuario;
                 
-                window.location.href = 'logado.html';
+                window.location.href = 'index.html';
             });
 
         } else {
@@ -31,7 +31,6 @@ function entrar() {
 
             response.text().then(texto => {
                 console.error(texto);
-                finalizar_aguardar(texto);
             });
         }
     });
@@ -40,12 +39,6 @@ function entrar() {
 }
 
 
-function finalizar_aguardar(resposta) {
-    btn_entrar.disabled = false;
-    img_aguarde.style.display= 'none';
-    div_erro.style.display = 'block';
-    div_erro.innerHTML = resposta;
-}
 
 
 
