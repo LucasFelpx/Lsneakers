@@ -71,16 +71,9 @@ function cadastrar() {
             response.text().then(function (resposta) {
                 div_erro.innerHTML = resposta;
             });
-            finalizarr_aguardar();
         }
     });
 
     return false;
 }
 
-
-function finalizarr_aguardar() {
-    btn_entrar.disabled = false;
-    img_aguarde.style.display='none';
-    div_erro.style.display='block';
-}
