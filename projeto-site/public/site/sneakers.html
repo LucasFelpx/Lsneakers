@@ -16,8 +16,7 @@
 
             <div class="sidebar" id="mySidebar">
                 <a class="closebtn" onclick="closeNav()">x</a>
-                <a href="#abrirModalCadastro">Inscreva-se</a>
-                <a href="#abrirModalLogin">Já é tem uma conta? Entre</a>
+                <a href="#" onclick="logoff()">Sair</a>
                 <a href="">Entre em contato</a>
                 <a href="">Sobre</a>
             </div>
@@ -268,7 +267,7 @@
 <script>
     verificar_autenticacao();
     
-  let contador = 0
+  let contador = 0;
         window.setInterval('banner_next()', 4000);
         function banner_next(){
             contador++;

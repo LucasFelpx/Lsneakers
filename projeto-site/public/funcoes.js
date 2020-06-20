@@ -13,7 +13,8 @@ function verificar_autenticacao() {
     if (login_usuario == undefined)  {
         redirecionar_login();
     } else {
-        b_usuario.innerHTML = nome_usuario;
+        debugger;
+       
         validar_sessao();
     }
     
@@ -41,4 +42,25 @@ function validar_sessao() {
 
 function finalizar_sessao() {
     fetch(`/usuarios/sair/${login_usuario}`, {cache:'no-store'}); 
+}
+
+
+// Função para ajustar a sidebar de acordo com sessao ativa ou não
+function sidebar_config(){
+    document.getElementById('mySidebar_deslogado').style.display = 'none';
+    document.getElementById('mySidebar_logado').style.display = 'block';
+}
+
+
+function teste_sessao() {
+    debugger;
+    login_usuario = sessionStorage.login_usuario_meuapp;
+    nome_usuario = sessionStorage.nome_usuario_meuapp;
+    
+    if (login_usuario != undefined)  {
+    
+        debugger;
+        sidebar_config();
+        validar_sessao();
+    }
 }

@@ -15,12 +15,24 @@
         <div class="container">
 
             <div class="sidebar" id="mySidebar">
-                <a class="closebtn" onclick="closeNav()">x</a>
-                <a href="#abrirModalCadastro">Inscreva-se</a>
-                <a href="#abrirModalLogin">Já é tem uma conta? Entre</a>
-                <a href="">Entre em contato</a>
-                <a href="">Sobre</a>
+                <div id="mySidebar_deslogado">
+                    <a class="closebtn" onclick="closeNav()">x</a>
+                    <a href="#abrirModalCadastro">Inscreva-se</a>
+                    <a href="#abrirModalLogin">Já é tem uma conta? Entre</a>
+                    <a href="">Entre em contato</a>
+                    <a href="">Sobre</a>
+                </div>
+
+                <div id="mySidebar_logado" style="display: none;">
+                    <a class="closebtn" onclick="closeNav()">x</a>
+                    <a href="#" onclick="logoff()">Sair</a>
+                    <a href="">Entre em contato</a>
+                    <a href="">Sobre</a>
+                </div>
+               
             </div>
+
+            
             
 
             <div class="busca">
@@ -159,7 +171,7 @@
 </body>
 </html>
 <script>
-    
+   teste_sessao();
  
 
 
