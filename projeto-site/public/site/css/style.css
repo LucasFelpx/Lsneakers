@@ -57,6 +57,11 @@ body{
     font-weight: bold;
 }
 
+.redes_sociais ul :hover{
+    color: #0e2f56;
+    
+}
+
 .redes_sociais{
     width: 300px;
     height: 20px;
