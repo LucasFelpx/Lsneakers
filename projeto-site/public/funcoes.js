@@ -6,14 +6,12 @@ function redirecionar_login() {
 }
 
 function verificar_autenticacao() {
-    debugger;
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
     if (login_usuario == undefined)  {
         redirecionar_login();
     } else {
-        debugger;
        
         validar_sessao();
     }
@@ -53,13 +51,11 @@ function sidebar_config(){
 
 
 function teste_sessao() {
-    debugger;
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
     if (login_usuario != undefined)  {
     
-        debugger;
         sidebar_config();
         validar_sessao();
     }
