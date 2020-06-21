@@ -3,6 +3,7 @@ let nome_usuario;
 
 function redirecionar_login() {
     window.location.href = 'index.html';
+    alert('Para continuar, faça o seu login !');
 }
 
 function verificar_autenticacao() {
