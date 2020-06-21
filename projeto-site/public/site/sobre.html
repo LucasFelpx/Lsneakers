@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="../funcoes.js"></script>
     <title>Sobre</title>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -19,34 +21,37 @@
                 <a href="#" onclick="logoff()">Sair</a>
                 <a href="#">Relatar erro</a>
             </div>
-            
 
-            
+
+
             <div class="redes_sociais">
                 <ul>
-                   
-                    <a href="https://www.instagram.com/eae.felpx/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100003467197962"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                    <a href="https://www.instagram.com/eae.felpx/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100003467197962"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
                     <a href="https://twitter.com/Elefe_LF"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </ul>
             </div>
 
-          
-            <a style="margin-left: 50px;"  class="openbtn"><i onclick="openNav()" class="fa fa-bars" aria-hidden="true"></i></a>
+
+            <a style="margin-left: 50px;" class="openbtn"><i onclick="openNav()" class="fa fa-bars"
+                    aria-hidden="true"></i></a>
 
             <div class="nav">
                 <ul>
-                   
+
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="sneakers.html">SNEAKERS</a></li>
                     <li><a href="nike.html">NIKE</a></li>
                     <li><a href="trap.html">RAP/TRAP</a></li>
                     <li><a class="atual" href="sobre.html">SOBRE</a></li>
-                   
+
                 </ul>
             </div>
 
-           
+
         </div>
     </div>
 
@@ -56,11 +61,12 @@
     <div id="abrirModalCadastro" class="modal">
         <div>
             <a href="#fechar" title="Fechar" class="fecharModal">x</a>
-            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br>
 
-            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span>
+            <br> <br>
             <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-               
+
                 <input type="text" name="nome" id="nomecompleto" placeholder="Nome Completo" class="input-padrao"> <br>
 
                 <input type="email" name="login" id="email" placeholder="Email" class="input-padrao"><br>
@@ -80,9 +86,10 @@
     <div id="abrirModalLogin" class="modal">
         <div>
             <a href="#fechar" title="Fechar" class="fecharModal">x</a>
-            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
+            <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br>
 
-            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
+            <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span>
+            <br> <br>
             <form id="form_login" method="post" onsubmit="return entrar()">
 
                 <input type="email" name="login" id="email" placeholder="Email" class="input-padrao"><br>
@@ -93,7 +100,84 @@
 
             </form>
         </div>
-        
+
+    </div>
+
+    <div class="showcase1_sobre">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <div class="showcase2_sobre">
+        <div class="container">
+            <div id="esquerda">
+                <img src="img/perfil.jpg" alt=""> <br>
+                <h2>Lucas Felipe</h2>
+                <h4 style="color: #959595; font-weight: normal; margin: 9px 0 20px 0">Student</h4>
+                <i style="color: #959595 ; font-weight: normal; margin-bottom: 40px;" class="fa fa-map-marker"
+                    aria-hidden="true"> <span>São Paulo - Brazil</span></i> <br>
+                <div id="sub_esquerda" style="float: left; margin-left: 40px;">
+                    <img src="img/grupo.png" style="width: 40px;" alt="">
+                </div>
+
+                <span style="margin-right: 140px;"><b>PontoCerto</b></span>
+                <i style="color: #959595 ; font-weight: normal; margin-bottom: 50px; margin-right: 97px; "
+                    class="fa fa-map-marker" aria-hidden="true"> <span>São Paulo - Brazil</span></i> <br>
+
+                <div id="contato">
+                    <a href="https://www.instagram.com/eae.felpx/"><i
+                            style="color: #232323; margin-left: 3px; margin-bottom: 10px; font-weight: bold;"
+                            class="fa fa-instagram" aria-hidden="true"></i> @eae.felpx</a> <br>
+                    <a href="https://github.com/LucasFelpx"><i
+                            style="color: #232323; margin-bottom: 10px; font-weight: bold;" class="fa fa-github-square"
+                            aria-hidden="true"></i> LucasFelpx</a> <br>
+                    <a href="https://www.facebook.com/profile.php?id=100003467197962"><i
+                            style=" margin-left: 10px; color: #232323; font-weight: bold;" class="fa fa-facebook-square"
+                            aria-hidden="true"></i>
+                        Lucas Felipe</a> <br> <br>
+                    <h2 style="font-size: 16px; margin-top: 25px; margin-left: -32px "> ABOUT ME</h2>
+
+                </div>
+                <div style="margin-top: 200px; margin-left: 15px; text-align: left; width: 80%; ">
+                    <p>
+                        Lucas Felipe, brasileiro e residente de São Paulo, 19 anos. Estudante de Análise e
+                        Desenvolvimento de Sistemas, Bandtec.
+                    </p>
+                    <p>
+                        Formado em Técnico de Informática na instituição privada Senac São Paulo desde 2019, porém com
+                        acesso a tecnologia
+                        com habilidades técnicas desde 2016.
+                    </p>
+                </div>
+            </div>
+
+           
+
+                <div id="miramar_health">
+
+                </div>
+                <span style="margin-left: 58px; font-size: 24px;"><b>Projeto Miramar Health </b></span> <br>
+                <i style="margin-left: 190px;"> Em Senac, Itaquera </i>
+
+                <div id="ponto_certo">
+
+                </div>
+                <span style="margin-left: 460px; font-size: 24px;"> <b>Projeto Ponto Certo </b></span> <br>
+                <i style="margin-left: 525px;">BandTec Digital School</i>
+
+
+                <div id="faca_orcamento">
+
+                </div>
+                <span style="margin-left: 60px; font-size: 24px;"> <b>Quer seu projeto aqui?</b></span> <br>
+                <i style="margin-left: 175px;">Faça seu orçamento</i>
+
+            
+        </div>
+
+
+    </div>
     </div>
 
 
@@ -108,10 +192,11 @@
     </div>
 
 </body>
+
 </html>
 <script>
-   teste_sessao();
- 
+    verificar_autenticacao();
+
 
 
 
