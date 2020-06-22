@@ -19,14 +19,14 @@
                     <a class="closebtn" onclick="closeNav()">x</a>
                     <a href="#abrirModalLogin">Login</a>
                     <a href="#abrirModalCadastro">Criar uma conta</a>
-                    <a href="#">Relatar erro</a>
+                    <!-- <a href="#">Relatar erro</a> -->
                     
                 </div>
 
                 <div id="mySidebar_logado" style="display: none;">
                     <a class="closebtn" onclick="closeNav()">x</a>
                     <a href="#" onclick="logoff()">Sair</a>
-                    <a href="#">Relatar erro</a>
+                    <!-- <a href="#">Relatar erro</a> -->
                 </div>
                
             </div>
@@ -66,7 +66,7 @@
             <img src="img/logo.png" style="width: 80px; margin-bottom: 10px;" alt=""> <br> 
 
             <span>Venha fazer parte desse mundo incrível sobre sneakers e conheça tudo por trás de cada detalhe</span> <br> <br> 
-            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <form id="form_cadastro" method="post" onsubmit=" return validar_cadastro()">
                
                 <input type="text" name="nome" id="nomecompleto" placeholder="Nome Completo" class="input-padrao"> <br>
 
@@ -74,7 +74,7 @@
 
                 <input type="password" name="senha" id="senha" placeholder="Senha" class="input-padrao"><br>
 
-                <!-- <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br> -->
+                <input type="password" id="confirmesenha" placeholder="Confirme sua senha" class="input-padrao"><br>
 
                 <button class="btn_modal" id="btn_entrar">Junte-se a nós</button>
             </form>
@@ -121,7 +121,7 @@
                 <span>Conheça algumas das músicas mais tocadas desses estilos musicais, onde trap é uma vertente do rap. Saiba quem são as figuras que estão na 
                     linha de frente desses sons
                 </span> <br>
-                <button style="margin-top: 50px;" class="btn_veja_mais">Veja Mais</button>
+              <a href="trap.html">  <button style="margin-top: 50px;" class="btn_veja_mais">Veja Mais</button> </a>
             </div>
 
             <div id="direita">
@@ -139,7 +139,7 @@
 
             <div id="direita">
                 <h1>Conheça agora e comece a participar dele </h1>
-                <button  class="btn_veja_mais">Veja Mais</button>
+                <a href="sneakers.html"><button  class="btn_veja_mais">Veja Mais</button></a>
             </div>
         </div>
     </div>
